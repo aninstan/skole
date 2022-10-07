@@ -1,2 +1,2 @@
-Things:)
-we doing good my dudes?
+# Things:)
+we doing good my dudes? Teller laks
