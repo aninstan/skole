@@ -1,2 +1,2 @@
-# Things:)
-we doing good my dudes? Teller laks
+# Fesk
+Teller laks
