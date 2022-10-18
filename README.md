@@ -1,2 +1,0 @@
-# Fesk
-Teller laks
