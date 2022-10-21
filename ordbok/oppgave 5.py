@@ -31,3 +31,4 @@ for lag in eliteserielag:
     if len(lag["seriemesterskap"]) >= 1 and len(lag["norgesmesterskap"]) >= 1:
         print(f"{lag['lag']} har vunnet eliteserien {len(lag['seriemesterskap'])} ganger og NM {len(lag['norgesmesterskap'])} ganger.")
 print("\n")
+
