@@ -17,17 +17,20 @@ eliteserielag = [
   { "lag": "Kristiansund", "seriemesterskap": [], "norgesmesterskap": [] }
 ]
 
+# lag som har vunnet eliteserien
 for lag in eliteserielag:
     if len(lag["seriemesterskap"]) >= 1:
         print(f"{lag['lag']} har vunnet eliteserien {len(lag['seriemesterskap'])} ganger.")
 print("\n")
 
+# Lag som har vunnet nm 
 for lag in eliteserielag:
     if len(lag["norgesmesterskap"]) >= 1:
         print(f"{lag['lag']} har vunnet NM {len(lag['norgesmesterskap'])} ganger.")
 print("\n")
 
-for lag in eliteserielag:
+# Lag som har vunnet eliteserien og nm
+for lag in eliteserielag: 
     if len(lag["seriemesterskap"]) >= 1 and len(lag["norgesmesterskap"]) >= 1:
         print(f"{lag['lag']} har vunnet eliteserien {len(lag['seriemesterskap'])} ganger og NM {len(lag['norgesmesterskap'])} ganger.")
 print("\n")
