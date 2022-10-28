@@ -35,3 +35,14 @@ for lag in eliteserielag:
         print(f"{lag['lag']} har vunnet eliteserien {len(lag['seriemesterskap'])} ganger og NM {len(lag['norgesmesterskap'])} ganger.")
 print("\n")
 
+# Laget som har vunnet eliteserien flest ganger
+
+
+# Laget som har vunnet NM flest ganger
+
+
+# Laget som vant eliteserien først
+
+
+# Laget som vant serien sist
+
