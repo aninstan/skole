@@ -44,3 +44,11 @@ print(mercury.name, venus.radius, earth.sun_distance)
 print(round(mercury.surface(),3))
 print(round(venus.volume(),3))
 print(round(earth.light_to_planet(),3))
+
+a = mercury.volume()
+b = venus.volume()
+
+if a > b:
+    print("Mercury has a larger volume than Venus. You can fit ", round(a/b), "Venuses inside Mercury.")
+else:
+    print("Venus has a larger volume than Mercury. You can fit ", round(b/a), "Mercurys inside Venus.")
