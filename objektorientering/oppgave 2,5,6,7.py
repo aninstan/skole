@@ -39,8 +39,8 @@ mercury = Planet("Mercury", 2439.7, 58)
 venus = Planet("Venus", 6051.8, 108)
 earth = Planet("Earth", 6371, 150)
 
-#print(mercury.name, venus.radius, earth.sun_distance)
+print(mercury.name, venus.radius, earth.sun_distance)
 
-print(mercury.surface())
-print(venus.volume())
-print(earth.light_to_planet())
+print(round(mercury.surface(),3))
+print(round(venus.volume(),3))
+print(round(earth.light_to_planet(),3))
