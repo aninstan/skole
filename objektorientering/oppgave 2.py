@@ -1,7 +1,7 @@
 class Planet:
-    def __init__(self, name, sunDistance, rings = 0):
+    def __init__(self, name, sun_distance, rings = 0):
         self.name = name
-        self.sunDistance = sunDistance
+        self.sun_distance = sun_distance
         self.radius = radius
         self.rings = rings
 
