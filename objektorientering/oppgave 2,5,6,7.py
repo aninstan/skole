@@ -21,7 +21,10 @@ class Planet:
         self.rings = rings
     
     def surface(self):
-        return 4 * m.pi * self.radius ** 3
+        return 4 * m.pi * self.radius ** 2
+
+    def volume(self):
+        return 4 / 3 * m.pi * self.radius ** 3
 
 
 
@@ -30,3 +33,4 @@ venus = Planet("Venus", 108, 6051.8)
 earth = Planet("Earth", 150, 6371)
 
 print(mercury.name, venus.radius, earth.sun_distance)
+print(mercury.surface())
