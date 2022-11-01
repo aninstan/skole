@@ -1,5 +1,18 @@
 class Planet:
+    """
+    Class for planet objects.
+
+    Parameters: 
+        name (str): Name of the planet
+        radius (float): Radius of the planet in km
+        sun_distance (int): Distance from the sun in million km
+        rings = 0 (int): Number of rings the planet has, only specify if more than 0
+    """
+
     def __init__(self, name, radius, sun_distance, rings = 0):
+
+        """ konstructor """
+
         self.name = name
         self.sun_distance = sun_distance
         self.radius = radius
