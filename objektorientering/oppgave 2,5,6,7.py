@@ -13,24 +13,34 @@ class Planet:
 
     def __init__(self, name, radius, sun_distance, rings = 0):
 
-        """ konstructor """
+        """ constructor """
 
         self.name = name
-        self.sun_distance = sun_distance
         self.radius = radius
+        self.sun_distance = sun_distance
         self.rings = rings
     
     def surface(self):
-        return 4 * m.pi * self.radius ** 2
+        surface = 4 * m.pi * self.radius ** 2
+        return surface / 1000000 # million km^2
 
     def volume(self):
-        return 4 / 3 * m.pi * self.radius ** 3
+        volume = 4 / 3 * m.pi * self.radius ** 3
+        return volume / 10000000000 # 10 billion km^3
+
+    def light_to_planet(self):
+        speed_of_light = 0.3 # million km per second
+        speed = self.sun_distance / speed_of_light
+        return speed / 60 # returns minutes
 
 
 
-mercury = Planet("Mercury", 58, 2439.7)
-venus = Planet("Venus", 108, 6051.8)
-earth = Planet("Earth", 150, 6371)
+mercury = Planet("Mercury", 2439.7, 58)
+venus = Planet("Venus", 6051.8, 108)
+earth = Planet("Earth", 6371, 150)
 
-print(mercury.name, venus.radius, earth.sun_distance)
+#print(mercury.name, venus.radius, earth.sun_distance)
+
 print(mercury.surface())
+print(venus.volume())
+print(earth.light_to_planet())
